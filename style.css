@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./images/bg-pattern-desktop.svg");
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.4;
+}
+
+main {
+  position: relative;
+  top: 30px;
+  height: 100%;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  border-radius: 10px;
+  max-width: 1440px;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.logo {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.text {
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+
+input {
+  padding: 0.7rem;
+  border: 1px #ccc solid;
+  width: 90%;
+  border-radius: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#arrow {
+  position: relative;
+  left: -30px;
+  top: 10px;
+  background-color: hsl(0, 93%, 68%);
+  padding: 9px;
+  width: 24px;
+  border-radius: 20px;
+}
+
+p {
+  color: hsl(0, 36%, 70%);
+}
+
+#hero {
+  width: 350px;
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    max-width: 375px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .flex {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  #arrow {
+    left: -10px;
+    top: 23px;
+  }
+
+  #hero {
+    position: relative;
+    top: 0;
+    width: 74%;
+  }
+}
